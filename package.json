@@ -1,0 +1,15 @@
+{
+  "name": "daily_coding",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dice": "./node_modules/.bin/ts-node 20250513/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
