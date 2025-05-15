@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dice": "./node_modules/.bin/ts-node 20250513/index.ts"
+    "dice": "ts-node 20250513/index.ts",
+    "sample": "ts-node 20250515/index.ts"
   },
   "author": "",
   "license": "ISC",
