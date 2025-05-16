@@ -12,3 +12,12 @@ console.log(times(3, janken));
 console.log(times(3, omikuji));
 console.log(times(3, atarikuji));
 console.log(times(3, kuji));
+
+//sampleを使わないでシャッフルする版
+import shuffle from '../shuffle';
+const times2 = (n: number, items: any[]) => shuffle(items).slice(0, n);
+
+console.log(times2(3, janken));
+console.log(times2(3, omikuji));
+console.log(times2(3, atarikuji));
+console.log(times2(3, kuji));
