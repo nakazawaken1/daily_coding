@@ -1,7 +1,8 @@
-export default (items: any[]) => {
-  for (let i = items.length - 1; i > 0; i--) {
+export default (items: any[], n: number = items.length) => {
+  const a = [...items];
+  for (let i = n - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    [items[i], items[j]] = [items[j], items[i]];
+    [a[i], a[j]] = [a[j], a[i]];
   }
-  return items;
+  return a.slice(0, n);
 }
