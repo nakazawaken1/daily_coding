@@ -1,4 +1,4 @@
-import dice from "./dice";
+import dice from "../dice";
 const counts = new Map<number, number>();
 for (let i = 0; i < 1000000; i++) {
   const result = dice();

@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "dice": "ts-node 20250513/index.ts",
-    "sample": "ts-node 20250515/index.ts"
+    "sample": "ts-node 20250515/index.ts",
+    "sample_no_duplicates": "ts-node 20250516/index.ts"
   },
   "author": "",
   "license": "ISC",
