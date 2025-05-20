@@ -6,7 +6,8 @@
     "dice": "ts-node 20250513/index.ts",
     "sample": "ts-node 20250515/index.ts",
     "sample_no_duplicates": "ts-node 20250516/index.ts",
-    "gacha": "ts-node 20250519/index.ts"
+    "gacha": "ts-node 20250519/index.ts",
+    "vue3": "cd 20250520 && npx vite --open"
   },
   "author": "",
   "license": "ISC",

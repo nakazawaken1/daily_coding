@@ -1,0 +1,17 @@
+<meta charset="utf-8">
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+<div id="app">{{ message }}</div>
+
+<script>
+  const { createApp, ref } = Vue
+
+  createApp({
+    setup() {
+      const message = ref('こんにちワールド!')
+      return {
+        message
+      }
+    }
+  }).mount('#app')
+</script>
