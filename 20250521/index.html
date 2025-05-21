@@ -1,0 +1,59 @@
+<meta charset="utf-8">
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+<main>
+  <h1>じゃんけん</h1>
+  <ul>
+    <li v-for="te of tes"><button @click="janken(te)">{{te}}</button></li>
+  </ul>
+  <button v-if="aite">{{aite}}</button>
+  <div>{{result}}</div>
+</main>
+
+<script>
+  const { createApp, ref } = Vue
+  createApp({
+    setup() {
+      return {
+        tes: ['✊', '✌️', '✋'],
+        aite: ref(),
+        result: ref(),
+        janken(te) {
+          this.aite = this.tes[Math.floor(Math.random() * this.tes.length)]
+          this.result = (() => {
+            if (te === this.aite) {
+              return 'あいこ'
+            } else if ((this.tes.indexOf(te) + 1) % this.tes.length === this.tes.indexOf(this.aite)) {
+              return 'あなたの勝ち'
+            } else {
+              return 'あなたの負け'
+            }
+          })()
+        },
+      }
+    }
+  }).mount('main')
+</script>
+
+<style>
+  * {
+    font-size: 5dvw;
+  }
+
+  main {
+    text-align: center;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1dvw;
+  }
+
+  button {
+    border-radius: 9999px;
+    padding: 0 0.5em;
+  }
+</style>
