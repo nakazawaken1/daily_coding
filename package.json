@@ -7,7 +7,8 @@
     "sample": "ts-node 20250515/index.ts",
     "sample_no_duplicates": "ts-node 20250516/index.ts",
     "gacha": "ts-node 20250519/index.ts",
-    "vue3": "cd 20250520 && npx vite --open"
+    "vue3": "cd 20250520 && npx vite --open",
+    "meishi": "ts-node 20250603/meishi.ts"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +18,15 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
-    "jstat": "^1.9.6"
+    "@aws-crypto/sha256-universal": "^5.2.0",
+    "@aws-sdk/client-kinesis-video": "^3.817.0",
+    "@aws-sdk/signature-v4": "^3.374.0",
+    "child_process": "^1.0.2",
+    "exifr": "^7.1.3",
+    "jstat": "^1.9.6",
+    "node-fetch": "^3.3.2",
+    "openai": "^5.0.2",
+    "sharp": "^0.34.2",
+    "ws": "^8.18.2"
   }
 }
